@@ -48,8 +48,7 @@ int main() {
 
     int score = 0;
     for (int i = 0; i < count; i++) {
-        // How many times a[i] appears in array b
-        int temp = count_target(b, count, a[i]);
+        int temp = count_target(b, count, a[i]); // How many times a[i] appears in array b
         score += a[i] * temp;
     }
 
