@@ -111,7 +111,7 @@ int main() {
     FILE *file = fopen("../input.txt", "r");
     char line[100000];
     size_t len = fread(line, 1, sizeof(line) - 1, file); // size_t can store the maximum size of a theoretically possible object of any type (including array).
-    line[len] = '\0';                                    // Null-terminate the string
+    line[len] = '\0';                                    // Null-terminated the string - https://stackoverflow.com/questions/2037209/what-is-a-null-terminated-string
     
     long long sum = extract_valid_mul(line);             // Calculate the sum of valid multiplications
     long long sum_conditions = extract_valid_mul_conditions(line);
